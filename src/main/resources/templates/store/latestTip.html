@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Let's exercise!</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="nav">
+      <div class="h-100 d-inline-flex align-items-center me-4">
+        <img src="css/img/telephone.png" alt="tel" width="17px" height="17px" />
+        <div class="txt">&nbsp;&nbsp;+012 3456 7890</div>
+      </div>
+      <div class="h-100 d-inline-flex align-items-center me-4">
+        <img src="css/img/email.png" alt="tel" width="17px" height="17px" />
+        <div class="txt">&nbsp;&nbsp;sumpreme1_1@naver.com</div>
+      </div>
+      <div class="h-100 d-inline-flex align-items-center me-4">
+        <img src="css/img/time.png" alt="tel" width="16px" height="16px" />
+        <div class="txt">&nbsp;&nbsp;Mon - Fri : 09 AM - 06 PM</div>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+    <a href="/"><img src="css/img/logo.png" alt="logo"
+        class="navbar-brand d-flex align-items-center"></a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
+        <a href="/notice" class="nav-item nav-link active">Notice</a>
+        <a href="/effects" class="nav-item nav-link">Effects</a>
+        <a href="/roulette" class="nav-item nav-link">Roulette</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Community</a>
+          <div class="dropdown-menu bg-light border-0 m-0">
+            <a href="/freeboard" class="dropdown-item">Free Board</a>
+            <a href="/promise" class="dropdown-item">Promise</a>
+            <a href="/tip" class="dropdown-item">Tip Board</a>
+          </div>
+        </div>
+        <a href="/join" class="nav-item nav-link"><img src="css/img/lock.png" width="20px" height="20px"
+            style="margin: 3px">Sign up</a>
+        <a href="/login" class="nav-item nav-link"><img src="css/img/login.png" width="21px" height="21px"
+            style="margin: 3px">My page</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid page-header2 py-5 mb-5 wow fadeIn" data-wow-delay="0.1s"
+    style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+    <div class="container py-5">
+      <h1 class="display-4  slideInDown mb-4">Tip Board</h1>
+      <nav aria-label="breadcrumb animated slideInDown">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item" style="font-weight: 600;"><a href="index">Home</a></li>
+          <li class="breadcrumb-item" style="font-weight: 600;"><a href="#">Community</a></li>
+          <li class="breadcrumb-item active" style="font-weight: 600;" aria-current="page">Tip Board</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <form class="row">
+    <div class="col-sm-2 mb-sm-20">
+      <select class="form-control">
+        <option selected="selected">게시글 + 댓글</option>
+        <option>제목만</option>
+        <option>글 작성자</option>
+        <option>댓글 작성자</option>
+      </select>
+    </div>
+    <div class="col-sm-4 mb-sm-10">
+      <input class="form-control" type="text" placeholder="검색어를 입력해주세요">
+    </div>
+    <div class="col-sm-1 mb-sm-10">
+      <button class="btn btn-block btn-round btn-g" type="submit">검색</button>
+    </div>
+  </form>
+  <div class="container">
+    <div class="card shadow">
+      <div class="card-body">
+        <table class="table table-hover" id="board_list">
+          <thead>
+            <tr class="t_color">
+              <th class="text-center d-none d-md-table-cell">번호</th>
+              <th class="w-50">제목</th>
+              <th class="text-center d-none d-md-table-cell">작성자</th>
+              <th class="text-center d-none d-md-table-cell">작성날짜</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="t_color">
+              <td class="text-center d-none d-md-table-cell">1</td>
+              <td><a href="https://www.youtube.com/watch?v=dpBYYEhdofI" target="_blank">
+                  여리탄탄 일자 허벅지 되는 7일 루틴!!</a></td>
+              <td class="text-center d-none d-md-table-cell">권소이</td>
+              <td class="text-center d-none d-md-table-cell">2022-12-31</td>
+            </tr>
+            <tr class="t_color">
+              <td class="text-center d-none d-md-table-cell">2</td>
+              <td><a href="https://www.youtube.com/watch?v=ZesUHMu4Msw" target="_blank">
+                  최강 전신유산소 HIIT와 복근운동</a></td>
+              <td class="text-center d-none d-md-table-cell">유림</td>
+              <td class="text-center d-none d-md-table-cell">2022-12-31</td>
+            </tr>
+            <tr class="t_color">
+              <td class="text-center d-none d-md-table-cell">3</td>
+              <td><a href="#">글 제목 입니다</a></td>
+              <td class="text-center d-none d-md-table-cell">홍길동</td>
+              <td class="text-center d-none d-md-table-cell">2022-12-31</td>
+            </tr>
+            <tr class="t_color">
+              <td class="text-center d-none d-md-table-cell">4</td>
+              <td><a href="#">글 제목 입니다</a></td>
+              <td class="text-center d-none d-md-table-cell">홍길동</td>
+              <td class="text-center d-none d-md-table-cell">2022-12-31</td>
+            </tr>
+            <tr class="t_color">
+              <td class="text-center d-none d-md-table-cell">5</td>
+              <td><a href="#">글 제목 입니다</a></td>
+              <td class="text-center d-none d-md-table-cell">홍길동</td>
+              <td class="text-center d-none d-md-table-cell">2022-12-31</td>
+            </tr>
+            <tr class="t_color">
+              <td class="text-center d-none d-md-table-cell">6</td>
+              <td><a href="#">글 제목 입니다</a></td>
+              <td class="text-center d-none d-md-table-cell">홍길동</td>
+              <td class="text-center d-none d-md-table-cell">2022-12-31</td>
+            </tr>
+            <tr class="t_color">
+              <td class="text-center d-none d-md-table-cell">7</td>
+              <td><a href="#">글 제목 입니다</a></td>
+              <td class="text-center d-none d-md-table-cell">홍길동</td>
+              <td class="text-center d-none d-md-table-cell">2022-12-31</td>
+            </tr>
+            <tr class="t_color">
+              <td class="text-center d-none d-md-table-cell">8</td>
+              <td><a href="#">글 제목 입니다</a></td>
+              <td class="text-center d-none d-md-table-cell">홍길동</td>
+              <td class="text-center d-none d-md-table-cell">2022-12-31</td>
+            </tr>
+            <tr class="t_color">
+              <td class="text-center d-none d-md-table-cell">9</td>
+              <td><a href="#">글 제목 입니다</a></td>
+              <td class="text-center d-none d-md-table-cell">홍길동</td>
+              <td class="text-center d-none d-md-table-cell">2022-12-31</td>
+            </tr>
+            <tr class="t_color">
+              <td class="text-center d-none d-md-table-cell">10</td>
+              <td><a href="#">글 제목 입니다</a></td>
+              <td class="text-center d-none d-md-table-cell">홍길동</td>
+              <td class="text-center d-none d-md-table-cell">2022-12-31</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="text-right">
+        <a href="/board-write" class="btn btn-write">글쓰기</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="board-btn t-right m-top20">
+    <div class="paging"><a href="#" title="처음"><img src="css/img/pparrow.png" width="15px" height="15px"
+          alt="처음페이지"></a>
+      <a href="#" title="이전"><img src="css/img/parrow.png" width="15px" height="15px" alt="이전페이지"></a>
+      <a class="on" title="현재 페이지">1</a>
+      <a href="#" title="2페이지">2</a>
+      <a href="#" title="3페이지">3</a>
+      <a href="#" title="4페이지">4</a>
+      <a href="#" title="5페이지">5</a>
+      <a href="#" title="다음"><img src="css/img/narrow.png" width="15px" height="15px" alt="다음페이지"></a>
+      <a href="#" title="마지막"><img src="css/img/nnarrow.png" width="15px" height="15px" alt="마지막페이지"></a>
+    </div>
+  </div>
+  </div>
+  <footer class="py-5 bg-dark">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h1 class="text-white mb-4" style="font-family: Stencil">
+            <img class="img-fluid me-3" src="css/img/running.png" alt="" />
+            Let's exercise!
+          </h1>
+          <p class="footer-txt">
+            연구로 밝혀진 운동의 다양한 좋은 효과 때문에 운동을
+            <strong>'기적의 약'</strong>이라고 부르기도 한다.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Address</h5>
+          <p class="text-white mb-4">
+            <img src="css/img/marker.png" alt="tel" width="19px" height="19px" />
+            <span class="footer-txt">&nbsp;&nbsp;서울특별시 구로구 경인로 557 신한은행 4층</span>
+          </p>
+          <p>
+            <img src="css/img/telephone.png" alt="tel" width="17px" height="17px" />
+            <span class="footer-txt">&nbsp;&nbsp;+012 3456 7890</span>
+          </p>
+          <p>
+            <img src="css/img/email.png" alt="tel" width="17px" height="17px" />
+            <span class="footer-txt">&nbsp;&nbsp;supreme1_1@naver.com</span>
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Quick Links</h5>
+          <a class="btnbtn-link" href="/notice"><img src="css/img/next.png" alt="next" width="13px"
+              height="13px">&nbsp;&nbsp;Notice</a>
+          <a class="btnbtn-link" href="/effects"><img src="css/img/next.png" alt="next" width="13px"
+              height="13px">&nbsp;&nbsp;Effects</a>
+          <a class="btnbtn-link" href="/roulette"><img src="css/img/next.png" alt="next" width="13px"
+              height="13px">&nbsp;&nbsp;Roulette</a>
+          <a class="btnbtn-link" href="/freeboard"><img src="css/img/next.png" alt="next" width="13px"
+              height="13px">&nbsp;&nbsp;Community</a>
+        </div>
+      </div>
+  </footer>
+</body>
+
+</html>

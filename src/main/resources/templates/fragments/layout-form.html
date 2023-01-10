@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+		th:fragment="layout(title, container)">
+
+	<!-- head 영역 -->
+	<head>
+		<title th:replace="${title}">타이틀</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" 
+			href="../css/styles.css"
+			th:href="@{/css/styles.css}">
+		<style>
+ 			body {
+			  position: relative;
+			  margin: 0;
+			  min-height: 100vh;
+			} 
+
+			body::after {
+			  content: '';
+			  display: block;
+			  height: 150px;
+			}
+			
+			footer {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 120px;
+			}
+		</style>
+	</head>
+	
+	<body id="body">
+	<!-- header 영역 -->
+	<div th:replace="fragments/header::header">header 영역</div>
+	
+	<!-- 공통적이지 않은 부분 : container 영역-->
+	<div th:insert="${container}" id="container" class="container-md" style="max-width: 800px"></div>
+
+	<!-- footer 영역 -->
+	<div th:replace="fragments/footer::copy">footer 영역</div>
+	</body>
+</html>

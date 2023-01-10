@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Let's exercise!</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="nav">
+      <div class="h-100 d-inline-flex align-items-center me-4">
+        <img src="css/img/telephone.png" alt="tel" width="17px" height="17px" />
+        <div class="txt">&nbsp;&nbsp;+012 3456 7890</div>
+      </div>
+      <div class="h-100 d-inline-flex align-items-center me-4">
+        <img src="css/img/email.png" alt="tel" width="17px" height="17px" />
+        <div class="txt">&nbsp;&nbsp;sumpreme1_1@naver.com</div>
+      </div>
+      <div class="h-100 d-inline-flex align-items-center me-4">
+        <img src="css/img/time.png" alt="tel" width="16px" height="16px" />
+        <div class="txt">&nbsp;&nbsp;Mon - Fri : 09 AM - 06 PM</div>
+      </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+    <a href="/"><img src="css/img/logo.png" alt="logo"
+        class="navbar-brand d-flex align-items-center"></a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
+        <a href="/notice" class="nav-item nav-link active">Notice</a>
+        <a href="/effects" class="nav-item nav-link">Effects</a>
+        <a href="/roulette" class="nav-item nav-link">Roulette</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Community</a>
+          <div class="dropdown-menu bg-light border-0 m-0">
+            <a href="/freeboard" class="dropdown-item">Free Board</a>
+            <a href="/promise" class="dropdown-item">Promise</a>
+            <a href="/tip" class="dropdown-item">Tip Board</a>
+          </div>
+        </div>
+        <a href="/join" class="nav-item nav-link"><img src="css/img/lock.png" width="20px" height="20px"
+            style="margin: 3px">Sign up</a>
+        <a href="/login" class="nav-item nav-link"><img src="css/img/login.png" width="21px" height="21px"
+            style="margin: 3px">My page</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid page-header2 py-5 mb-5 wow fadeIn" data-wow-delay="0.1s"
+    style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+    <div class="container py-5">
+      <h1 class="display-4  slideInDown mb-4">My page</h1>
+      <nav aria-label="breadcrumb animated slideInDown">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item" style="font-weight: 600;"><a href="index">Home</a></li>
+          <li class="breadcrumb-item active" style="font-weight: 600;" aria-current="page">My page</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <hr class="divider-w">
+  <div class="container">
+    <div class="board-row">
+      <div class="col-sm-6">
+        <div class="card shadow">
+          <div class="card-body">
+            <form action="mypage" method="post">
+              <div class="form-group">
+                <label for="user_name">이름</label>
+                <input type="text" id="user_name" name="user_name" class="form-control" value="권소이"
+                  disabled="disabled" />
+              </div>
+              <div class="form-group">
+                <label for="user_id">아이디</label>
+                <input type="text" id="user_id" name="user_id" class="form-control" value="supreme1_1@naver.com"
+                  disabled="disabled" />
+              </div>
+              <div class="form-group">
+                <label for="user_pw">비밀번호</label>
+                <input type="password" id="user_pw" name="user_pw" class="form-control" value="1234" />
+              </div>
+              <div class="form-group">
+                <label for="user_pw2">비밀번호 확인</label>
+                <input type="password" id="user_pw2" name="user_pw2" class="form-control" value="1234" />
+              </div>
+              <div class="form-group">
+                <label for="user_address">주소</label>
+                <input type="text" id="user_address" name="user_address" class="form-control"
+                  value="서울특별시 구로구 경인로 557 신한은행 4층" />
+              </div>
+              <div class="form-group">
+                <div class="btn-uploadcancle">
+                  <span>
+                    <button type="submit" class="btn btn-dark upload">수정</a></button>
+                  </span>
+                  <span>
+                    <button type="submit" class="btn btn-white cancle">취소</a></button>
+                  </span>
+                </div>
+              </div>
+
+            </form>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-5 bg-dark">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h1 class="text-white mb-4" style="font-family: Stencil">
+            <img class="img-fluid me-3" src="css/img/running.png" alt="" />
+            Let's exercise!
+          </h1>
+          <p class="footer-txt">
+            연구로 밝혀진 운동의 다양한 좋은 효과 때문에 운동을
+            <strong>'기적의 약'</strong>이라고 부르기도 한다.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Address</h5>
+          <p class="text-white mb-4">
+            <img src="css/img/marker.png" alt="tel" width="19px" height="19px" />
+            <span class="footer-txt">&nbsp;&nbsp;서울특별시 구로구 경인로 557 신한은행 4층</span>
+          </p>
+          <p>
+            <img src="css/img/telephone.png" alt="tel" width="17px" height="17px" />
+            <span class="footer-txt">&nbsp;&nbsp;+012 3456 7890</span>
+          </p>
+          <p>
+            <img src="css/img/email.png" alt="tel" width="17px" height="17px" />
+            <span class="footer-txt">&nbsp;&nbsp;supreme1_1@naver.com</span>
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Quick Links</h5>
+          <a class="btnbtn-link" href="/notice"><img src="css/img/next.png" alt="next" width="13px"
+              height="13px">&nbsp;&nbsp;Notice</a>
+          <a class="btnbtn-link" href="/effects"><img src="css/img/next.png" alt="next" width="13px"
+              height="13px">&nbsp;&nbsp;Effects</a>
+          <a class="btnbtn-link" href="/roulette"><img src="css/img/next.png" alt="next" width="13px"
+              height="13px">&nbsp;&nbsp;Roulette</a>
+          <a class="btnbtn-link" href="/freeboard"><img src="css/img/next.png" alt="next" width="13px"
+              height="13px">&nbsp;&nbsp;Community</a>
+        </div>
+      </div>
+  </footer>
+</body>
+
+</html>
